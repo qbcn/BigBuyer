@@ -1,0 +1,25 @@
+{
+  "update_version":"0.1",
+  "page_scripts":[
+    {
+      "matches":["http://item.taobao.com/item.htm","http://detail.tmall.com/item.htm","http://item.jd.com/","http://shop.mogujie.com/detail/"],
+      "scripts":["http://a.fastbee.cn/agent/js/detail.go.js"]
+    },
+    {
+      "matches":["http://h5.m.taobao.com/awp/core/detail.htm"],
+      "scripts":["http://a.fastbee.cn/agent/js/jquery.min.js","http://a.fastbee.cn/agent/js/detail.m.tb.js"]
+    },
+    {
+      "matches":["http://detail.m.tmall.com/item.htm"],
+      "scripts":["http://a.fastbee.cn/agent/js/jquery.min.js","http://a.fastbee.cn/agent/js/detail.m.tm.js"]
+    },
+    {
+      "matches":["http://m.jd.com/product/"],
+      "scripts":["http://a.fastbee.cn/agent/js/jquery.min.js","http://a.fastbee.cn/agent/js/detail.m.jd.js"]
+    },
+    {
+      "matches":["http://m.mogujie.com/x6/detail/"],
+      "scripts":["http://a.fastbee.cn/agent/js/jquery.min.js","http://a.fastbee.cn/agent/js/detail.m.mg.js"]
+    }
+  ]
+}
