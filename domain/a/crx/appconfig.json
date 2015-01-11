@@ -1,5 +1,47 @@
 {
   "update_version":"0.1",
+  "menu_links":[
+    {
+      "name":"首页",
+      "action":"load_url",
+      "arg":"http://m.fastbee.cn/"
+    },
+    {
+      "name":"精选商品",
+      "action":"load_url",
+      "arg":"http://m.fastbee.cn/like/"
+    },
+    {
+      "name":"我的代购",
+      "action":"load_url",
+      "arg":"http://m.fastbee.cn/my/"
+    },
+    {
+      "name":"立即代购",
+      "action":"buy_this",
+      "arg":"http://b.fastbee.cn/order/item.html"
+    },
+    {
+      "name":"复制链接",
+      "action":"copy_url",
+      "arg":""
+    },
+    {
+      "name":"关于",
+      "action":"load_url",
+      "arg":"http://www.fastbee.cn/about/"
+    }
+  ],
+  "item_pages":[
+    "http://item.taobao.com/item.htm",
+    "http://h5.m.taobao.com/awp/core/detail.htm",
+    "http://detail.tmall.com/item.htm",
+    "http://detail.m.tmall.com/item.htm",
+    "http://item.jd.com/",
+    "http://m.jd.com/product/",
+    "http://shop.mogujie.com/detail/",
+    "http://m.mogujie.com/x6/detail/"
+  ],
   "page_scripts":[
     {
       "matches":["http://item.taobao.com/item.htm","http://detail.tmall.com/item.htm","http://item.jd.com/","http://shop.mogujie.com/detail/"],
