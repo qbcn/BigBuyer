@@ -44,6 +44,10 @@
   ],
   "page_scripts":[
     {
+      "matches":["http://b.fastbee.cn/buy/item.html"],
+      "scripts":["js/jquery.min.js","js_/item.js"]
+    },
+    {
       "matches":["http://item.taobao.com/item.htm","http://detail.tmall.com/item.htm","http://item.jd.com/","http://shop.mogujie.com/detail/"],
       "scripts":["http://a.fastbee.cn/crx/js/detail.go.js"]
     },
