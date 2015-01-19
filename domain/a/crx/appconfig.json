@@ -7,9 +7,9 @@
       "arg":"http://m.fastbee.cn/"
     },
     {
-      "name":"精选商品",
-      "action":"load_url",
-      "arg":"http://m.fastbee.cn/sale/"
+      "name":"立即代购",
+      "action":"buy_this",
+      "arg":"http://b.fastbee.cn/buy/item.html"
     },
     {
       "name":"我的代购",
@@ -17,19 +17,14 @@
       "arg":"http://m.fastbee.cn/my/"
     },
     {
-      "name":"立即代购",
-      "action":"buy_this",
-      "arg":"http://b.fastbee.cn/buy/item.html"
-    },
-    {
       "name":"复制链接",
       "action":"copy_url",
       "arg":""
     },
     {
-      "name":"关于",
+      "name":"帮助",
       "action":"load_url",
-      "arg":"http://www.fastbee.cn/about/"
+      "arg":"http://www.fastbee.cn/help/"
     }
   ],
   "item_urls":[

@@ -18,10 +18,10 @@
     </header>
     <section class="content" style="min-height:480px;">
       <div class="wrap">
-        <div class="dt-loading none">
+        <div class="dt-loading">
           <span class="c-loading"></span>
         </div>
-        <div class="wrap order-buy">
+        <div class="wrap order-buy hide">
           <section class="address " id="address9">
             <div class="address-info" id="J_address">
               <p class="address-name">收货人: 我的名字</p>
@@ -49,7 +49,7 @@
                     </div>
                     <div class="dgsc-pr bt">
                       <div class="dgscp-c">
-                        <h3>尺寸</h3>
+                        <h3 class="unset">尺寸</h3>
                         <p class="dgsc-pc">
                           <i data-id="123456:1234" class="">尺寸A</i>
                         </p>
@@ -88,20 +88,35 @@
                 <div class="orderPay " id="orderPay16">
                   <div class="subtotal">
                     <span class="total-text" style="margin-right:12px;">共1件商品</span>
-                    <span>合计:</span><strong class="price orange">￥00.00</strong>
+                    <span>合计:</span><strong class="price orange"></strong>
                   </div>
                 </div>
               </div>
             </section>
           </section>
           <div class="dgsc-ft">
-            <a href="#" class="c-btn-blue dt-addcart"><span>加入代购车</span></a>
-            <a href="#" class="c-btn-orgn dt-immbuy"><span>立即代购</span></a>
+            <a href="javascript:;" class="c-btn-blue dt-addcart"><span>加入代购车</span></a>
+            <a href="javascript:;" class="c-btn-orgn dt-immbuy"><span>立即代购</span></a>
           </div>
           <div class="mask"></div>
         </div>
       </div>
     </section>
+    <form id="order-form" style="display:none;" action="http://b.fastbee.cn/buy/order" method="post">
+      <input type="hidden" id="form-mkt" name="mkt" value="">
+      <input type="hidden" id="form-shop-id" name="shop_id" value="">
+      <input type="hidden" id="form-shop-name" name="shop_name" value="">
+      <input type="hidden" id="form-item-id" name="item_id" value="">
+      <input type="hidden" id="form-title" name="title" value="">
+      <input type="hidden" id="form-image" name="image" value="">
+      <input type="hidden" id="form-price" name="price" value="">
+      <input type="hidden" id="form-sku-id" name="sku_id" value="">
+      <input type="hidden" id="form-sku-txt" name="sku_txt" value="">
+      <input type="hidden" id="form-quantity" name="quantity" value="1">
+      <input type="hidden" id="form-ship-fee" name="ship_fee" value="0">
+      <input type="hidden" id="form-store-id" name="store_id" value="1">
+      <input type="hidden" id="form-action" name="action" value="">
+    </form>
     <div class="c-float-popWrap msgMode hide">
       <div class="c-float-modePop">
         <div class="warnMsg">提示信息</div>
