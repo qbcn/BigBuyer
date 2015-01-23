@@ -151,6 +151,71 @@ a {
   padding:0 5px;
   margin:2px
 }
+.toolbar{
+  position:relative;
+  z-index:99
+}
+.viewport{
+  width:100%;
+  min-height:100%
+}
+.viewport>.navbar{
+  display:none
+}
+.viewport>.content{
+  overflow:auto;
+  width:auto;
+  height:auto
+}
+.viewport>.toolbar{
+  display:none
+}
+.viewport>.content>.wrap,.viewport>.content>.wrap>.active,.viewport>.content>.wrap>.inactive{
+  width:100%;
+  min-height:100%
+}
+.viewport>.content>.wrap>.active{
+  display:block
+}
+.viewport>.content>.wrap>.inactive{
+  display:none
+}
+.viewport>.content>.forward,.viewport>.content>.backward{
+}
+.viewport>.content>.forward>.next,.viewport>.content>.backward>.prev{
+}
+.viewport>.content>.trans{
+  display:none;
+  background:transparent;
+  position:absolute;
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+  overflow:hidden;
+  z-index:9999
+}
+.viewport>.content>.trans>div{
+  position:absolute;
+  width:100%;
+  height:100%
+}
+.viewport.enableNavbar>.navbar{
+  display:block
+}
+.viewport.enableToolbar>.toolbar{
+  display:block
+}
+.viewport.enableScroll,.viewport.enableScroll>.content,.viewport.enableScroll>.content>.wrap {
+  position:relative;
+  overflow-y:hidden;
+  height:100%
+}
+.viewport.enableTransition,.viewport.enableTransition>.content,.viewport.enableTransition>.content>.wrap {
+  position:relative;
+  overflow-x:hidden;
+  width:100%
+}
 .c-nav,.navbar {
   background-color:#f5f5f5;
   border-bottom:1px #d9d9d9 solid;
@@ -248,8 +313,11 @@ a {
 }
 .order-buy .order-info .seller-name {
   font-size:14px;
-  padding:16px 0;
+  padding:11px 0;
   border-bottom:1px solid #ddd
+}
+.order-buy .order-info .seller-name img {
+  height:15px
 }
 .order-buy .order-info .order-list-info li {
   position:relative
@@ -257,7 +325,6 @@ a {
 .order-buy .order-info .order-list-info .list-info {
   display:-webkit-box;
   padding:12px 0;
-  padding-right:70px;
   border-bottom:1px solid #ddd
 }
 .order-buy .order-info .order-list-info .list-info .list-cont {
@@ -282,13 +349,8 @@ a {
   width:100%
 }
 .order-buy .order-info .order-list-info .list-price-nums {
-  margin:12px 0 0 8px;
-  width:68px;
-  position:absolute;
-  top:0;
-  right:0;
-  text-align:right;
-  line-height:16px
+  margin:8px 0;
+  line-height:15px
 }
 .order-buy .order-info .order-list-info .list-price-nums p {
   font-weight:700;
@@ -300,7 +362,7 @@ a {
 .order-buy .order-info .order-list-info .list-cont .goods-title {
   font-size:12px;
   overflow:hidden;
-  -webkit-line-clamp:2;
+  -webkit-line-clamp:1;
   -webkit-box-orient:vertical;
   display:-webkit-box;
   line-height:16px
@@ -748,12 +810,12 @@ a {
   height:37px
 }
 .c-btn-blue,.c-btn-orgn {
-  height:32px;
-  line-height:32px;
+  height:30px;
+  line-height:30px;
   color:#fff
 }
 .c-btn-blue>span,.c-btn-orgn>span {
-  height:31px
+  height:30px
 }
 .c-btn-blue {
   background-color:#007fd6
@@ -1005,14 +1067,14 @@ a {
 }
 .dgsc-ft {
   background-color:#fff;
-  padding:6px 55px;
+  padding-bottom:6px;
   text-align:center;
-  display:-webkit-box
+  /*display:-webkit-box*/
 }
 .dgsc-ft>a,.dgsc-ft>b,.dgsc-ft .c-btn {
-  -webkit-box-flex:1;
+  /*-webkit-box-flex:1;
   width:100%;
-  display:block;
+  display:block;*/
   margin-right:10px
 }
 .dgsc-ft>a:last-child,.dgsc-ft .c-btn {
@@ -1031,4 +1093,25 @@ a {
 }
 .dt-loading .c-loading {
   min-height:150px
+}
+.c-btn2 {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #212121;
+  min-width: 38px;
+  padding: 0 6px;
+  text-align: center;
+  border-radius: 4px;
+  background: -webkit-gradient(linear,left top,left bottom,from(#fcfcfc),to(#ededed));
+  box-shadow: 0 0 1px rgba(0,0,0,.6);
+  -webkit-box-shadow: 0 0 1px rgba(0,0,0,.6);
+}
+.order-buy .order-info .order-time {
+  position: absolute;
+  right: 12px;
+  top: 13px;
+  font-size: 12px;
 }

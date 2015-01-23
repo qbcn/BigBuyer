@@ -4,36 +4,30 @@
     <meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no"/>
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
-    <title>确认代购信息</title>
+    <title>我的代购</title>
     <link rel="stylesheet" href="http://a.fastbee.cn/b/css/buy.css">
     <script src="http://a.fastbee.cn/lib/js/jquery.min.js"></script>
   </head>
   <body>
     <header class="navbar">
       <ul>
-        <li>确认代购</li>
+        <li>我的代购</li>
         <li><a class="c-btn c-btn-aw"><span>返回</span></a></li>
         <li></li>
       </ul>
     </header>
     <section class="content" style="min-height:480px;">
       <div class="wrap">
-        <div class="dt-loading">
+        <div class="dt-loading hide">
           <span class="c-loading"></span>
         </div>
-        <div class="wrap order-buy hide">
-          <section class="address " id="address9">
-            <div class="address-info"">
-              <p class="address-name">收货人: 我的名字</p>
-              <p class="address-phone">18012345678</p>
-            </div>
-            <div class="address-details">代购网点: 某省某市某区某网点地址...</div>
-          </section>
+        <div class="wrap order-buy">
           <section class="order " id="order4">
             <section class="order-info">
               <div class="order-list">
                 <div class="orderInfo " id="orderInfo11">
                   <h4 class="seller-name"><img src="http://gtms03.alicdn.com/tps/i3/TB11_r0FVXXXXbYXVXXlZPaGpXX-36-27.png"><span> 店铺名</span></h4>
+                  <p class="order-time">2015-01-05 16:45</p>
                 </div>
                 <ul class="order-list-info">
                   <li class="item " id="item1">
@@ -42,36 +36,13 @@
                       <div class="list-cont">
                         <h5 class="goods-title">这里是商品标题这里是商品标题这里是商品标题</h5>
                         <div class="itemPay list-price-nums" id="itemPay10">
-                          <p class="price orange">￥00.00</p>
+                          <p><span class="price orange" style="margin-right:6px;">￥00.00</span>x<span class="quantity orange">1</span></p>
                         </div>
-                        <p class="godds-specification"></p>
-                      </div>
-                    </div>
-                    <div class="dgsc-pr bt">
-                      <div class="dgscp-c">
-                        <h3 class="unset">尺寸</h3>
-                        <p class="dgsc-pc">
-                          <i data-id="123456:1234" class="">尺寸A</i>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="quantity b-box buy-nums" id="quantity15">
-                      <p class="title">数量</p>
-                      <div class="interpret">
-                        <div class="nums">
-                          <span class="minus lock">-</span>
-                          <input type="text" value="1" class="input-nums c-form-txt-normal">
-                          <span class="plus">+</span>
-                        </div>
+                        <p class="godds-specification">已选:</p>
                       </div>
                     </div>
                   </li>
                 </ul>
-                <div class="memo " id="memo5">
-                  <div class="inputs">
-                    <input type="text" value="" placeholder="给卖家留言:" class="c-inputs c-form-txt-normal">
-                  </div>
-                </div>
                 <div class="orderPay " id="orderPay16">
                   <div class="subtotal">
                     <span style="margin-right:6px;">共<strong class="quantity orange">1</strong>件</span>
@@ -81,8 +52,8 @@
                 </div>
               </div>
               <div class="dgsc-ft">
-                <a href="javascript:;" class="c-btn-blue dt-addcart"><span>加入代购车</span></a>
-                <a href="javascript:;" class="c-btn-orgn dt-immbuy"><span>立即代购</span></a>
+                <a href="javascript:;" class="c-btn2 dt-confirmship"><span>确认收货</span></a>
+                <a href="javascript:;" class="c-btn2 dt-viewship"><span>查看物流</span></a>
               </div>
             </section>
           </section>
