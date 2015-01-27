@@ -306,6 +306,7 @@ a {
   color:rgba(255,255,255,.5)
 }
 .order-buy .order-info {
+  position:relative;
   background:#fff;
   margin-top:12px;
   padding:0 12px;
@@ -352,7 +353,7 @@ a {
   margin:8px 0;
   line-height:15px
 }
-.order-buy .order-info .order-list-info .list-price-nums p {
+.order-buy .order-info .order-list-info .list-price-nums span {
   font-weight:700;
   font-size:14px
 }
@@ -370,7 +371,7 @@ a {
 .order-buy .order-info .order-list-info .list-cont .goods-title img {
   width:18px
 }
-.order-buy .order-info .order-list-info .list-cont .godds-specification {
+.order-buy .order-info .order-list-info .list-cont .goods-specification {
   margin-top:8px;
   font-size:12px;
   color:#999
@@ -430,7 +431,7 @@ a {
   color:#999
 }
 .order-buy .order-info .subtotal .price {
-  font-size:16px;
+  font-size:14px;
   font-weight:700
 }
 .order-buy .order-group {
