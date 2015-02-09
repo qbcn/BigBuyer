@@ -9,84 +9,107 @@
     <script src="http://a.fastbee.cn/lib/js/jquery.min.js"></script>
   </head>
   <body>
-    <header class="navbar">
-      <ul>
-        <li>确认代购</li>
-        <li><a class="c-btn c-btn-aw"><span>返回</span></a></li>
-        <li></li>
-      </ul>
-    </header>
-    <section class="content" style="min-height:480px;">
-      <div class="wrap">
-        <div class="dt-loading">
-          <span class="c-loading"></span>
-        </div>
-        <div class="wrap order-buy hide">
-          <section class="address">
-            <div class="address-info">
-              <p class="address-name">收货人: 我的名字</p>
-              <p class="address-phone">18012345678</p>
+    <div class="viewport enableNavbar">
+      <header class="navbar">
+        <ul>
+          <li>确认代购</li>
+          <li><a class="c-btn c-btn-aw"><span>返回</span></a></li>
+          <li></li>
+        </ul>
+      </header>
+      <section class="content" style="min-height:480px;">
+        <div class="wrap">
+          <div class="inactive" data-idx="0"></div>
+          <div class="active" data-idx="1">
+            <div class="dt-loading">
+              <span class="c-loading"></span>
             </div>
-            <div class="address-details">代购网点: 某省某市某区某网点地址...</div>
-          </section>
-          <section class="order-info">
-            <div class="order-list">
-              <div class="">
-                <h4 class="seller-name"><img src="http://gtms03.alicdn.com/tps/i3/TB11_r0FVXXXXbYXVXXlZPaGpXX-36-27.png"><span> 店铺名</span></h4>
-              </div>
-              <ul class="order-list-info">
-                <li class="item">
-                  <div class="list-info">
-                    <div class="list-img"><a><img src="http://gtms01.alicdn.com/tps/i4/T10B2IXb4cXXcHmcPq-85-85.gif"></a></div>
-                    <div class="list-cont">
-                      <h5 class="goods-title">这里是商品标题这里是商品标题这里是商品标题</h5>
-                      <div class="list-price-nums">
-                        <p><span class="price orange">￥00.00</span></p>
-                      </div>
-                      <p class="goods-specification"></p>
-                    </div>
-                  </div>
-                  <div class="dgsc-pr bt">
-                    <div class="dgscp-c">
-                      <h3 class="unset">尺寸</h3>
-                      <p class="dgsc-pc">
-                        <i data-id="123456:1234" class="">尺寸A</i>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="quantity b-box buy-nums">
-                    <p class="title">数量</p>
-                    <div class="interpret">
-                      <div class="nums">
-                        <span class="minus lock">-</span>
-                        <input type="text" value="1" class="input-nums c-form-txt-normal">
-                        <span class="plus">+</span>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-              <div class="memo">
-                <div class="inputs">
-                  <input type="text" value="" placeholder="给卖家留言:" class="c-inputs c-form-txt-normal">
+            <div class="order-buy hide">
+              <section class="address">
+                <div class="address-info">
+                  <p class="address-name">收货人: 我的名字</p>
+                  <p class="address-phone">18012345678</p>
                 </div>
-              </div>
-              <div class="subtotal">
-                <span style="display:inline-block;width:50px;">共<strong class="quantity orange">1</strong>件</span>
-                <span style="display:inline-block;width:82px;">总<strong class="price orange">￥0.00</strong></span>
-                <span style="display:inline-block;width:123px;">(含运费<strong class="ship-fee orange">￥0</strong> 代购费<strong class="service-fee orange">￥0</strong>)</span>
-              </div>
+                <div class="address-details">代购网点: 某省某市某区某网点地址...</div>
+              </section>
+              <section class="order-info">
+                <div class="order-list">
+                  <div class="">
+                    <h4 class="seller-name"><img src="http://gtms03.alicdn.com/tps/i3/TB11_r0FVXXXXbYXVXXlZPaGpXX-36-27.png"><span> 店铺名</span></h4>
+                  </div>
+                  <ul class="order-list-info">
+                    <li class="item">
+                      <div class="list-info">
+                        <div class="list-img"><a><img src="http://gtms01.alicdn.com/tps/i4/T10B2IXb4cXXcHmcPq-85-85.gif"></a></div>
+                        <div class="list-cont">
+                          <h5 class="goods-title">这里是商品标题这里是商品标题这里是商品标题</h5>
+                          <div class="list-price-nums">
+                            <p><span class="price orange">￥00.00</span></p>
+                          </div>
+                          <p class="goods-specification"></p>
+                        </div>
+                      </div>
+                      <div class="dgsc-pr bt">
+                        <div class="dgscp-c">
+                          <h3 class="unset">尺寸</h3>
+                          <p class="dgsc-pc">
+                            <i data-id="123456:1234" class="">尺寸A</i>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="quantity b-box buy-nums">
+                        <p class="title">数量</p>
+                        <div class="interpret">
+                          <div class="nums">
+                            <span class="minus lock">-</span>
+                            <input type="text" value="1" class="input-nums c-form-txt-normal">
+                            <span class="plus">+</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="memo">
+                    <div class="inputs">
+                      <input type="text" value="" placeholder="给卖家留言:" class="c-inputs c-form-txt-normal">
+                    </div>
+                  </div>
+                  <div class="subtotal">
+                    <span style="display:inline-block;width:50px;">共<strong class="quantity orange">1</strong>件</span>
+                    <span style="display:inline-block;width:82px;">总<strong class="price orange">￥0.00</strong></span>
+                    <span style="display:inline-block;width:123px;">(含运费<strong class="ship-fee orange">￥0</strong> 代购费<strong class="service-fee orange">￥0</strong>)</span>
+                  </div>
+                </div>
+                <div class="dgsc-ft">
+                  <a href="javascript:;" class="c-btn-orgn dt-immbuy"><span>立即代购</span></a>
+                  <a href="javascript:;" class="c-btn-blue dt-addcart"><span>加入代购车</span></a>
+                </div>
+              </section>
             </div>
-            <div class="dgsc-ft">
-              <a href="javascript:;" class="c-btn-blue dt-addcart"><span>加入代购车</span></a>
-              <a href="javascript:;" class="c-btn-orgn dt-immbuy"><span>立即代购</span></a>
-            </div>
-          </section>
-          <div class="mask"></div>
+            <div class="mask"></div>
+            <form id="order-form" style="display:none;" action="http://b.fastbee.cn/buy/order.html" method="post">
+              <input type="hidden" id="form-mkt" name="mkt" value="">
+              <input type="hidden" id="form-shop-id" name="shop_id" value="">
+              <input type="hidden" id="form-shop-name" name="shop_name" value="">
+              <input type="hidden" id="form-item-id" name="item_id" value="">
+              <input type="hidden" id="form-title" name="title" value="">
+              <input type="hidden" id="form-image" name="image" value="">
+              <input type="hidden" id="form-price" name="price" value="">
+              <input type="hidden" id="form-sku-id" name="sku_id" value="">
+              <input type="hidden" id="form-sku-txt" name="sku_txt" value="">
+              <input type="hidden" id="form-quantity" name="quantity" value="1">
+              <input type="hidden" id="form-ship-fee" name="ship_fee" value="0">
+              <input type="hidden" id="form-memo" name="memo" value="">
+              <input type="hidden" id="form-store-id" name="store_id" value="1">
+              <input type="hidden" id="form-action" name="action" value="">
+            </form>
+          </div>
+          <div class="inactive" data-idx="2"></div>
         </div>
-      </div>
-    </section>
-    <div class="c-float-popWrap msgMode hide">
+      </section>
+      <footer class="toolbar" style="display:none;"></footer>
+    </div>
+    <div class="c-float-popWrap hide">
       <div class="c-float-modePop">
         <div class="warnMsg">提示信息</div>
         <div class="content"></div>
@@ -96,21 +119,5 @@
         </div>
       </div>
     </div>
-    <form id="order-form" style="display:none;" action="http://b.fastbee.cn/buy/order.html" method="post">
-      <input type="hidden" id="form-mkt" name="mkt" value="">
-      <input type="hidden" id="form-shop-id" name="shop_id" value="">
-      <input type="hidden" id="form-shop-name" name="shop_name" value="">
-      <input type="hidden" id="form-item-id" name="item_id" value="">
-      <input type="hidden" id="form-title" name="title" value="">
-      <input type="hidden" id="form-image" name="image" value="">
-      <input type="hidden" id="form-price" name="price" value="">
-      <input type="hidden" id="form-sku-id" name="sku_id" value="">
-      <input type="hidden" id="form-sku-txt" name="sku_txt" value="">
-      <input type="hidden" id="form-quantity" name="quantity" value="1">
-      <input type="hidden" id="form-ship-fee" name="ship_fee" value="0">
-      <input type="hidden" id="form-memo" name="memo" value="">
-      <input type="hidden" id="form-store-id" name="store_id" value="1">
-      <input type="hidden" id="form-action" name="action" value="">
-    </form>
   </body>
 </html>
