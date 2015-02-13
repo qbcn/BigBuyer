@@ -1,4 +1,4 @@
-/**
+﻿/**
 * 内容: 代购商品
 * 作用: 热卖分析和推荐, 每日更新1次
 * 1. 每日凌晨分析订单数据, 插入或更新本数据
@@ -32,6 +32,7 @@ CREATE TABLE IF NOT EXISTS `fbee_itemmeta`(
 * head_oid=1 购物车头订单
 * head_oid>1 购物车子订单
 * market 1-taobao 2-tmall 3-jd 4-mogujie
+* sku_id 格式20509:3267945;1627207:28326#34927191052
 * status 状态值与迁移
 * -1 ORDER_DELETE
 * +0 ORDER_CANCEL 
@@ -62,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `fbee_order`(
   `mkt_shopid` varchar(15) NOT NULL,
   `mkt_shopname` varchar(95) NOT NULL,
   `mkt_iid` varchar(15) NOT NULL,
-  `sku_id` varchar(15),
+  `sku_id` varchar(120),
   `sku_txt` varchar(95),
   `title` varchar(95) NOT NULL,
   `image` varchar(1023) NOT NULL,

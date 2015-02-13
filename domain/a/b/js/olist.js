@@ -171,7 +171,7 @@ var olist = function() {
           if (i < orders.length-1) {
             order_tpl = order_tpl.clone().appendTo(olist_box);
           }
-          order_box.attr({"data-oid":order.order_id,"data-mkt":order.market});
+          order_box.attr({"data-oid":order.order_id,"data-mkt":order.market,"data-sid":order.mkt_shopid,"data-sts":order.status});
           if (order.market="tm") {
             $(".seller-name img", order_box).attr({"src":"http://gtms01.alicdn.com/tps/i1/TB17dGWFVXXXXc3aXXXlZPaGpXX-36-27.png"});
           }
@@ -267,6 +267,8 @@ var olist = function() {
       })
     }
     var order_trade  = function(order_node, order_id){
+      //do nothing
+      return;
     }
     var order_viewship  = function(order_node, order_id){
     }

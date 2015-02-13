@@ -40,27 +40,27 @@
   "page_scripts":[
     {
       "matches":["http://b.fastbee.cn/buy/item.html"],
-      "scripts":["js/jquery.min.js","js_/item.js"]
+      "scripts":["js/jquery.min.js","js_/item_ex.js"]
     },
     {
-      "matches":["http://item.taobao.com/item.htm","http://detail.tmall.com/item.htm","http://item.jd.com/","http://shop.mogujie.com/detail/"],
-      "scripts":["http://a.fastbee.cn/lib/js/jquery.min.js"]
+      "matches":["http://b.fastbee.cn/buy/olist.html"],
+      "scripts":["js/jquery.min.js","js_/olist_ex.js"]
     },
     {
-      "matches":["http://h5.m.taobao.com/awp/core/detail.htm"],
-      "scripts":["http://a.fastbee.cn/lib/js/jquery.min.js","http://a.fastbee.cn/crx/js/detail.m.tb.js"]
+      "matches":["http://m.fastbee.cn/pro-index-single","http://item.taobao.com/item.htm","http://detail.tmall.com/item.htm","http://item.jd.com/","http://shop.mogujie.com/detail/"],
+      "scripts":["js/jquery.min.js","js_/buy.go.js"]
     },
     {
-      "matches":["http://detail.m.tmall.com/item.htm"],
-      "scripts":["http://a.fastbee.cn/lib/js/jquery.min.js","http://a.fastbee.cn/crx/js/detail.m.tm.js"]
+      "matches":["http://h5.m.taobao.com/awp/core/detail.htm","http://detail.m.tmall.com/item.htm"],
+      "scripts":["js/jquery.min.js","js_/buy.tb.js"]
     },
     {
       "matches":["http://m.jd.com/product/"],
-      "scripts":["http://a.fastbee.cn/lib/js/jquery.min.js","http://a.fastbee.cn/crx/js/detail.m.jd.js"]
+      "scripts":["js/jquery.min.js","js_/buy.jd.js"]
     },
     {
       "matches":["http://m.mogujie.com/x6/detail/"],
-      "scripts":["http://a.fastbee.cn/lib/js/jquery.min.js","http://a.fastbee.cn/crx/js/detail.m.mg.js"]
+      "scripts":["js/jquery.min.js","js_/buy.mg.js"]
     }
   ]
 }
