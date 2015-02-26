@@ -172,7 +172,7 @@ var olist = function() {
             order_tpl = order_tpl.clone().appendTo(olist_box);
           }
           order_box.attr({"data-oid":order.order_id,"data-mkt":order.market,"data-sid":order.mkt_shopid,"data-sts":order.status});
-          if (order.market="tm") {
+          if (order.market=="tm") {
             $(".seller-name img", order_box).attr({"src":"http://gtms01.alicdn.com/tps/i1/TB17dGWFVXXXXc3aXXXlZPaGpXX-36-27.png"});
           }
           $(".seller-name span", order_box).text(" " + order.mkt_shopname);
@@ -186,7 +186,7 @@ var olist = function() {
             if (j < order.items.length-1) {
               item_tpl = item_tpl.clone().appendTo(ilist_box);
             }
-            item_box.attr({"data-iid":item.mkt_iid,"data-skuid":item.sku_id});
+            item_box.attr({"data-iid":item.mkt_iid,"data-suboid":item.sub_oid,"data-skuid":item.sku_id,"data-qty":item.quantity});
             $(".list-img a img", item_box).attr({"src":item.image});
             $(".goods-title", item_box).text(item.title);
             $(".goods-specification", item_box).text(item.sku_txt);

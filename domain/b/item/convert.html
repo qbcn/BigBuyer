@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <title>Page title</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <script src="http://a.fastbee.cn/lib/js/jquery.min.js"></script>
+  </head>
+  <body>
+    <script>
+    $(function(){
+      var get_urlarg = function(key){
+        var reg = new RegExp("[\?|&]"+ key +"=([^&^#]*)(&|#|$)");
+        var ret = window.location.search.match(reg);
+        if (ret != null)
+        {
+          return decodeURIComponent(ret[1]);
+        }
+        return null;
+      }
+      var mkt = get_urlarg("mkt");
+      var iid = get_urlarg("iid");
+      var item_urls = [
+        "tb":"http://item.taobao.com/item.htm?id={id}",
+        "tm":"http://detail.tmall.com/item.htm?id={id}",
+        "jd":"http://m.jd.com/product/{id}.html",
+        "mg":"http://m.mogujie.com/x6/detail/{id}"
+      ];
+      var url = item_urls[mkt];
+      if (url){
+        url = url.replace("{id}", iid);
+        $("a.active-item").attr({"href":item_url});
+      }
+      
+      (function(win,doc){
+        var s = doc.createElement("script"), h = doc.getElementsByTagName("head")[0];
+        if (!win.alimamatk_show) {
+          s.charset = 'gbk';
+          s.async = true;
+          s.src = "http://a.alimama.cn/tkapi.js";
+          h.insertBefore(s, h.firstChild);
+        }
+        var o = {
+          pid : "mm_29656851_0_0",
+          appkey : "23040537",
+          unid : "",
+          evid : "",
+          type : "click",
+          plugins: [{name : 'keyword'},{name : 'aroundbox'}]
+        };
+        win.alimamatk_onload = win.alimamatk_onload || [];
+        win.alimamatk_onload.push(o);
+      })(window, document);
+    });
+    </script>
+    <h1 class="hello-world">Hello, tk!</h1>
+    <a isconvert=1 class="active-item" href="http://item.taobao.com/item.htm?id=42363899279" target="_blank">点我购买</a>
+  </body>
+</html>
