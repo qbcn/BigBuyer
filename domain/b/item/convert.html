@@ -20,16 +20,16 @@
       }
       var mkt = get_urlarg("mkt");
       var iid = get_urlarg("iid");
-      var item_urls = [
-        "tb":"http://item.taobao.com/item.htm?id={id}",
-        "tm":"http://detail.tmall.com/item.htm?id={id}",
+      var item_urls = {
+        "tb":"http://h5.m.taobao.com/awp/core/detail.htm?id={id}",
+        "tm":"http://detail.m.tmall.com/item.htm?id={id}",
         "jd":"http://m.jd.com/product/{id}.html",
         "mg":"http://m.mogujie.com/x6/detail/{id}"
-      ];
+      };
       var url = item_urls[mkt];
       if (url){
         url = url.replace("{id}", iid);
-        $("a.active-item").attr({"href":item_url});
+        $("a.active-item").attr({"href":url});
       }
       
       (function(win,doc){
@@ -54,6 +54,6 @@
     });
     </script>
     <h1 class="hello-world">Hello, tk!</h1>
-    <a isconvert=1 class="active-item" href="http://item.taobao.com/item.htm?id=42363899279" target="_blank">点我购买</a>
+    <a isconvert=1 class="active-item" href="http://h5.m.taobao.com/awp/core/detail.htm?id=42363899279" target="_blank">点我购买</a>
   </body>
 </html>

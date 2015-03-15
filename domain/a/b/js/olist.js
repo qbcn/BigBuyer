@@ -101,7 +101,7 @@ var order_action = function(){
   };
   var role = function(){
     /* get role from cookie */
-    return "buyer";
+    return "store";
   }();
   var action_url = function(){
     var urls = {

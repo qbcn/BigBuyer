@@ -51,24 +51,20 @@
       "scripts":["js/jquery.min.js","js_/buy.go.js"]
     },
     {
-      "matches":["http://h5.m.taobao.com/awp/core/detail.htm","http://detail.m.tmall.com/item.htm"],
-      "scripts":["js/jquery.min.js","js_/buy.tb.js"]
+      "matches":["http://h5.m.taobao.com/awp/mtb/mtb.htm","http://home.m.jd.com/myJd/home.action","http://m.mogujie.com/"],
+      "scripts":["js/jquery.min.js","js_/buy.login.js"]
     },
     {
-      "matches":["http://m.jd.com/product/"],
-      "scripts":["js/jquery.min.js","js_/buy.jd.js"]
-    },
-    {
-      "matches":["http://m.mogujie.com/x6/detail/"],
-      "scripts":["js/jquery.min.js","js_/buy.mg.js"]
+      "matches":["http://h5.m.taobao.com/awp/core/detail.htm","http://detail.m.tmall.com/item.htm","http://m.jd.com/product/","http://m.mogujie.com/x6/detail/"],
+      "scripts":["js/jquery.min.js","js_/buy.item.js"]
     }
   ],
-  "market_urls":[
+  "market_urls":{
     "tb":{"login_check":"http://h5.m.taobao.com/awp/mtb/mtb.htm","cart_url":"http://h5.m.taobao.com/awp/base/bag.htm"},
     "tm":{"login_check":"http://h5.m.taobao.com/awp/mtb/mtb.htm","cart_url":"http://h5.m.taobao.com/awp/base/bag.htm"},
     "jd":{"login_check":"http://home.m.jd.com/myJd/home.action","cart_url":"http://p.m.jd.com/cart/cart.action"},
     "mg":{"login_check":"http://m.mogujie.com/","cart_url":"http://m.mogujie.com/x6/cart/list"}
-  ],
+  },
   "convert_url":"http://b.fastbee.cn/item/convert.html?mkt={mkt}&iid={id}",
   "order_api":"http://b.fastbee.cn/buy/order"
 }
