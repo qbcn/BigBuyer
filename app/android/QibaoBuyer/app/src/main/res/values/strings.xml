@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">奇宝</string>
+    <string name="action_settings">设置</string>
+    <string name="action_buy">代购</string>
+    <string name="action_home">首页</string>
+    <string name="action_user_home">我的代购</string>
+    <string name="action_copy_url">复制链接</string>
+    <string name="action_help">帮助</string>
+</resources>

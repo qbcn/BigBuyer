@@ -1,0 +1,31 @@
+{
+  "name": "奇宝代购",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "淘宝服务站,代购网点专用订单工具,一键代购,批量下单,订单同步,快速查单.",
+  "homepage_url": "http://www.fastbee.cn/app/",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_title": "奇宝代购",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "permissions": [
+    "http://*.fastbee.cn/",
+    "http://*.taobao.com/",
+    "http://*.tmall.com/",
+    "http://*.mogujie.com/",
+    "http://*.jd.com/",
+    "tabs"
+  ],
+  "web_accessible_resources": [
+    "js/jquery.min.js"
+  ]
+}

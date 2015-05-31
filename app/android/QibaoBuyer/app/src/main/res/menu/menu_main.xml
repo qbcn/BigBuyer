@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item android:id="@+id/action_buy" android:title="@string/action_buy"
+        android:icon="@drawable/ic_action_buy" android:showAsAction="always" />
+    <item android:id="@+id/action_home" android:title="@string/action_home"
+        android:icon="@drawable/ic_action_home" android:showAsAction="always" />
+    <item android:id="@+id/action_user_home" android:title="@string/action_user_home"
+        android:icon="@drawable/ic_action_uhome" android:showAsAction="never" />
+    <item android:id="@+id/action_settings" android:title="@string/action_copy_url"
+        android:icon="@drawable/ic_action_url" android:showAsAction="never" />
+    <item android:id="@+id/action_help" android:title="帮助"
+        android:icon="@drawable/ic_action_help" android:showAsAction="never" />
+</menu>

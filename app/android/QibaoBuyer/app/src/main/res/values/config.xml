@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="start_url">file:///android_asset/start.html</string>
+    <string name="home_url">http://m.fastbee.cn/</string>
+    <string name="buy_url">http://b.fastbee.cn/buy/item.html</string>
+    <string name="uhome_url">http://m.fastbee.cn/my/</string>
+    <string name="help_url">http://m.fastbee.cn/help/</string>
+
+    <string-array name="item_urls">
+        <item>http://item.taobao.com/item.htm</item>
+        <item>http://h5.m.taobao.com/awp/core/detail.htm</item>
+        <item>http://detail.tmall.com/item.htm</item>
+        <item>http://detail.m.tmall.com/item.htm</item>
+        <item>http://item.jd.com/</item>
+        <item>http://m.jd.com/product/</item>
+        <item>http://shop.mogujie.com/detail/</item>
+        <item>http://m.mogujie.com/x6/detail/</item>
+        <item>http://www.vip.com/detail-</item>
+        <item>http://m.vip.com/product-</item>
+    </string-array>
+
+</resources>

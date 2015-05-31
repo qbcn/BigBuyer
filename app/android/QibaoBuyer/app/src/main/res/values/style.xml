@@ -1,0 +1,5 @@
+<resources>
+    <style name="AppActionOverflow" parent="android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_action_more</item>
+    </style>
+</resources>

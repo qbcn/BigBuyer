@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        <!-- Action bar styles -->
+        <item name="android:actionOverflowButtonStyle">@style/AppActionOverflow</item>
+    </style>
+
+</resources>
